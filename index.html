@@ -16,6 +16,21 @@
     <!-- Icons (Phosphor Icons for modern look) -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
+    <meta name="description"
+        content="Impegno ID - Layanan Trip Adventure Terbaik di Jogja. Nikmati paket wisata jeep Merapi, open trip pantai, mountain sunrise, dan wisata rombongan dengan harga terjangkau.">
+    <meta name="keywords"
+        content="trip jogja, jeep adventure merapi, wisata jogja murah, sewa jeep jogja, open trip pantai jogja, impegno id, wisata adventure jogja">
+    <meta name="author" content="Impegno.id">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://impegno.id/">
+    <meta property="og:title" content="Impegno.id - Trip Adventure Terbaik di Jogja">
+    <meta property="og:description"
+        content="Rasakan sensasi petualangan seru dengan layanan terbaik dari kami. Jeep Adventure, Pantai, Sunrise, dan banyak lagi!">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1533130061792-649d45df8dd5?q=80&w=2000&auto=format&fit=crop">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -51,8 +66,8 @@
                 <p class="hero-subtitle">Rasakan sensasi petualangan seru dengan layanan terbaik dari kami.</p>
                 <div class="hero-buttons">
                     <a href="#services" class="btn btn-primary">Lihat Paket</a>
-                    <a href="https://wa.me/628123456789" class="btn btn-secondary"><i class="ph ph-whatsapp-logo"></i>
-                        Chat WhatsApp</a>
+                    <a href="https://api.whatsapp.com/send/?phone=6285122338040&text&type=phone_number&app_absent=0"
+                        target="_blank" class="btn btn-secondary"><i class="ph ph-whatsapp-logo"></i> Chat WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -128,9 +143,12 @@
             <h2 class="section-title text-center">Destinasi Populer di <span class="text-highlight-red">Jogja &
                     Sekitarnya</span></h2>
             <div class="map-container">
-                <!-- Use a styled placeholder for the map since generation failed -->
-                <img src="https://placehold.co/1200x500/FAFAFA/E42313?text=Peta+Wisata+Jogja+(Map+Simulation)"
-                    class="map-bg" alt="Map Background">
+                <a href="https://www.google.com/maps?ll=-7.741607,110.395635&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=5559692557452889309"
+                    target="_blank" title="Buka di Google Maps">
+                    <!-- Use a styled placeholder for the map since generation failed -->
+                    <img src="https://placehold.co/1200x500/FAFAFA/E42313?text=Klik+untuk+Lihat+Lokasi+di+Google+Maps"
+                        class="map-bg" alt="Map Background">
+                </a>
                 <!-- Pins are simulated with absolute positioning -->
                 <div class="map-pin pin-1" data-label="Merapi">
                     <i class="ph ph-map-pin-fill"></i>
@@ -190,19 +208,32 @@
         <div class="container text-center">
             <h2 class="cta-title">Siap Berpetualang Sekarang?</h2>
             <p class="cta-subtitle">Jangan tunda liburan impianmu. Hubungi kami untuk penawaran terbaik!</p>
-            <a href="https://wa.me/628123456789" class="btn btn-red btn-xl"><i class="ph ph-whatsapp-logo"></i> Chat via
-                WhatsApp</a>
+            <div class="cta-buttons btn-group" style="justify-content: center; flex-wrap: wrap;">
+                <a href="https://api.whatsapp.com/send/?phone=6285122338040&text&type=phone_number&app_absent=0"
+                    target="_blank" class="btn btn-red btn-xl"><i class="ph ph-whatsapp-logo"></i> Chat Admin 1</a>
+                <a href="https://api.whatsapp.com/send/?phone=6285737030359&text&type=phone_number&app_absent=0"
+                    target="_blank" class="btn btn-secondary btn-xl"
+                    style="background: transparent; color: var(--text-dark); border-color: var(--text-dark);"><i
+                        class="ph ph-whatsapp-logo"></i> Chat Admin 2</a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
+            <div class="footer-contact" style="margin-bottom: 20px;">
+                <p><i class="ph ph-map-pin"></i> <a
+                        href="https://www.google.com/maps?ll=-7.741607,110.395635&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=5559692557452889309"
+                        target="_blank" style="color: var(--primary-yellow); text-decoration: underline;">Lokasi Kami di
+                        Google Maps</a></p>
+            </div>
             <p>&copy; 2026 Impegno.id. All rights reserved.</p>
             <div class="social-links">
                 <a href="#"><i class="ph ph-instagram-logo"></i></a>
                 <a href="#"><i class="ph ph-facebook-logo"></i></a>
-                <a href="#"><i class="ph ph-tiktok-logo"></i></a>
+                <a href="https://www.tiktok.com/@impegno.id?_t=8nLVUUYEVF4&_r=1" target="_blank"><i
+                        class="ph ph-tiktok-logo"></i></a>
             </div>
         </div>
     </footer>
