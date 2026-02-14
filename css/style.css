@@ -248,10 +248,55 @@ img {
    but grid works decent for landscape feel. 
    On mobile, maybe show only one prominent one or cycle them */
 
+/* Mobile: Turn grid into a smooth crossfade slideshow for better fit */
 @media (max-width: 768px) {
     .hero-collage {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        display: block;
+    }
+
+    .hero-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        animation: mobileSlideshow 12s infinite;
+    }
+
+    /* Stagger animations */
+    .slide-1 {
+        animation-delay: 0s;
+    }
+
+    .slide-2 {
+        animation-delay: 4s;
+    }
+
+    .slide-3 {
+        animation-delay: 8s;
+    }
+}
+
+@keyframes mobileSlideshow {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    38% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
