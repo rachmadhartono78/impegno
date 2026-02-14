@@ -85,3 +85,24 @@ Atau silahkan langsung hubungi kami melalui tautan yang ada di Bio..🙏
 .
 
 ini juga
+
+
+Ada yg mau seru-seruan naik perahu kano…?
+
+IMPEGNO.ID
+Tour & Transport
+
+Melayani:
+- Paket Wisata/City tour Jogja dan sekitarnya (Group/family/personal)
+- Outbond (team building)
+- Rental luar kota & dalam kota (tersedia berbagai jenis mobil)
+- Antar jemput Bandara YIA
+- Perjalanan Dinas
+- DLL
+
+Silahkan... Drivernya super ramah dan seru, mobilnya nyaman, perjalanan aman😍
+
+Untuk booking atau informasi lebih lanjut,
+* Fastrespon WA wa.me/6287711406898‬
+* Follow Instragam kami ; @impegno.id
+80w
