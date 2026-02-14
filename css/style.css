@@ -553,3 +553,125 @@ img {
         font-size: 2rem;
     }
 }
+
+/* Testimonials */
+.testimonials {
+    background-color: var(--bg-light);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card .stars {
+    color: var(--primary-yellow);
+    font-size: 1.2rem;
+}
+
+.testimonial-text {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #555;
+    flex-grow: 1;
+}
+
+.testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.testimonial-user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-user h4 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.testimonial-user span {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Floating WhatsApp Button */
+.floating-wa-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    animation: bounceIn 1s;
+}
+
+.floating-wa-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+    background-color: #20BD5A;
+}
+
+.floating-wa-btn i {
+    font-size: 1.5rem;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) translateY(50px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    70% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .floating-wa-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .floating-wa-btn span {
+        display: none;
+        /* Hide text on mobile to save space, show icon only? Or keep it? Let's keep it for improved CTR */
+        display: block;
+    }
+}
